@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048小游戏</title>
+    <link rel="stylesheet" href="css/mstyle.css">
+   <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div id="game" class="game">
+      <div class="game-score">分数：<span id="game_score">0</span></div>
+      <div id="game_container" class="game-container">
+
+        <div id="cell-con">
+            <!-- <div class="game-cell"></div> -->
+        </div>
+        <div id="num-con">
+            <!-- <div class="game-num game-num-2"></div> -->
+        </div>
+        
+
+        <div id="game_over" class="game-over game-hide">
+          <div class="game-over-info">
+            <div id="game_over_info"><p></p></div>
+            <a id="game_restart">重新开始</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/MiniGame2048.js"></script>
+
+    <script>
+      $(function(){
+        game2048()
+      })
+    </script>
+  </body>
+</html>
